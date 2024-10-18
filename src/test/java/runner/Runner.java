@@ -128,8 +128,7 @@ public class Runner extends BaseDriver {
             Assert.assertTrue(element.checkBox.isEnabled());
 
             MyFunc.myClick(element.submitButton);
-
-            System.out.println(element.confirmMessage.getText());
+            
             Assert.assertTrue(element.confirmMessage.getText().contains("Başvurunuz"));
         }
     }
